@@ -8,6 +8,8 @@
   <a href="LIVE_DEMO_URL">🌐 Live Demo</a>
 </p>
 
+> Note: Live demo will be available after deployment.
+
 ---
 
 ## About the Project
@@ -18,11 +20,6 @@ This website represents my journey as a **BSc. CSIT student**, aspiring frontend
 
 The portfolio is designed to present my background, technical skills, selected projects, and creative interests through a clean and modern web experience.
 
-## Live Demo
-
-🌐 **[Visit My Portfolio](LIVE_DEMO_URL)**
-
-> Note: Live demo will be available after deployment.
 
 ## Features
 
