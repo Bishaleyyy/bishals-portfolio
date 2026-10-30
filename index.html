@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bishal Sapkota | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ CANVAS PARTICLES ░░ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo" aria-label="Bishal Sapkota — BS monogram, back to home">
+      <svg class="nav-logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bsLogoGrad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B22234"/>
+            <stop offset="1" stop-color="#F0788C"/>
+          </linearGradient>
+          <linearGradient id="bsLogoText" x1="30" y1="20" x2="48" y2="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#D94F65"/>
+            <stop offset="1" stop-color="#F0788C"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="4" width="56" height="56" rx="18" fill="rgba(178,34,52,.10)" stroke="url(#bsLogoGrad)" stroke-width="1.5"/>
+        <g font-family="'Outfit', sans-serif" font-weight="800" font-size="28">
+          <text x="14.1" y="42" fill="#F3EEF0">B</text>
+          <text x="32.3" y="42" fill="url(#bsLogoText)">S</text>
+        </g>
+        <circle cx="54" cy="10" r="3" fill="#D94F65"/>
+      </svg>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"     class="nav-link active">Home</a></li>
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#skills"   class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ HOME ░░ -->
+  <section class="section home-section" id="home">
+    <div class="home-text fade-in">
+      <p class="home-greeting">Hey there, I'm</p>
+      <h1 class="home-name">Bishal <span>Sapkota</span></h1>
+      <h2 class="home-role">
+        <span class="role-prefix">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="type-cursor">|</span>
+      </h2>
+      <p class="home-bio">
+      A BSc. CSIT student passionate about building clean websites, creating trend-inspired and cinematic video edits, and exploring 3D design — one creative idea at a time.      
+      </p>
+      <div class="home-btns">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="home-socials">
+        <a href="https://github.com/Bishaleyyy"      target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bishal-sapkota-94b612358/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/bishaleyyyy_/"  target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@bishaleyyyy_" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="mailto:sapkotabishal447@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- DUAL-IMAGE HERO — CSS crossfade on hover -->
+    <div class="home-image fade-in" id="homeImage">
+      <div class="img-moon"></div>
+      <div class="img-ring"></div>
+      <div class="img-circle">
+        <!-- main2.jpg sits on top and fades out on hover, revealing main.jpg below -->
+        <img class="img-primary" src="main.jpg"  alt="Bishal Sapkota — primary photo" />
+        <img class="img-hover"   src="main2.jpg" alt="Bishal Sapkota — secondary photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="section about-section" id="about">
+    <div class="section-label">Get To Know</div>
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="about-grid">
+      <div class="about-content fade-in">
+        <h3 class="about-heading">BSc. CSIT Student &amp; Creative Builder</h3>
+        <p class="about-para">
+          I'm <strong>Bishal Sapkota</strong>, currently pursuing my Bachelor's in BSc. CSIT. I love the intersection where code meets creativity — writing clean HTML and CSS, working with JavaScript, and building things that feel good to use.
+        </p>
+        <p class="about-para">
+        Outside of programming, I enjoy video editing from trend-inspired edits to cinematic visuals using CapCut. I love exploring creative ideas, experimenting with different styles, and bringing stories to life through visuals.
+        </p>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <strong>Programming</strong>
+              <p>C · C++ · DSA · Python</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <strong>Web Development</strong>
+              <p>HTML · CSS · JavaScript</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-database"></i>
+            <div>
+              <strong>Database</strong>
+              <p>SQL · Database Queries</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-film"></i>
+            <div>
+              <strong>Creative Editing</strong>
+              <p>CapCut · Trend-based &amp; Cinematic Edits</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-code-branch"></i>
+            <div>
+              <strong>Version Control</strong>
+              <p>Git · GitHub</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section class="section skills-section" id="skills">
+    <div class="section-label">What I Know</div>
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card fade-in" data-level="65">
+        <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+        <h4>C Programming</h4>
+        <p>Fundamentals &amp; logic building</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="60">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h4>C++</h4>
+        <p>OOP &amp; problem solving</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="55">
+        <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h4>DSA</h4>
+        <p>Data Structures &amp; Algorithms</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="85">
+        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+        <h4>HTML</h4>
+        <p>Semantic &amp; structured markup</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="80">
+        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <h4>CSS</h4>
+        <p>Layouts, animations &amp; responsive</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="60">
+        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+        <h4>JavaScript</h4>
+        <p>Interactivity &amp; DOM scripting</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="80">
+        <div class="skill-icon"><i class="fa-solid fa-scissors"></i></div>
+        <h4>CapCut Editing</h4>
+        <p>Cinematic video editing</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="70">
+        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+        <h4>Git &amp; GitHub</h4>
+        <p>Version control &amp; collaboration</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="60">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h4>Python</h4>
+        <p>Programming, data analysis &amp; visualization</p>
+        <span class="skill-libs">NumPy · Pandas · Matplotlib · Seaborn</span>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+      <div class="skill-card fade-in" data-level="50">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h4>SQL</h4>
+        <p>Database queries &amp; data management</p>
+        <div class="skill-meter"><span class="skill-percent"></span><div class="skill-bar"><span></span></div></div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section class="section projects-section" id="projects">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-4">
+          <div class="project-thumb-label">StudySync</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Python</span><span>PyTorch</span><span>Pandas</span><span>Streamlit</span></div>
+          <h3>StudySync</h3>
+          <p>An AI-powered personalized study planning system that uses a Deep Neural Network (DNN) to predict subject priorities and generate personalized study plans.</p>
+          <div class="project-links">
+            <a href="https://github.com/Bishaleyyy/StudySync" class="project-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://studysync-bishaleyyy.streamlit.app/" class="project-btn project-btn-live" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-5">
+          <div class="project-thumb-label">ReelFrame</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Web App</span><span>Media Tool</span></div>
+          <h3>ReelFrame — Creator Studio</h3>
+          <p>A browser-based media tool for composing photos and videos in social-media-friendly aspect ratios, with background customization and export features.</p>
+          <div class="project-links">
+            <a href="https://github.com/Bishaleyyy/ReelFrame" class="project-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://bishaleyyy.github.io/ReelFrame/" class="project-btn project-btn-live" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-6">
+          <div class="project-thumb-label">AgeMate</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tech"><span>Web App</span></div>
+          <h3>AgeMate — Age Calculator</h3>
+          <p>A web-based age calculator that calculates age from a date of birth.</p>
+          <div class="project-links">
+            <a href="https://github.com/Bishaleyyy/AgeMate" class="project-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://bishaleyyy.github.io/AgeMate/" class="project-btn project-btn-live" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- More projects on GitHub -->
+    <div class="projects-more">
+      <a href="https://github.com/Bishaleyyy?tab=repositories" target="_blank" rel="noopener noreferrer" class="projects-more-link">
+        <i class="fa-brands fa-github"></i>
+        Visit My GitHub for More Projects
+        <i class="fa-solid fa-arrow-up-right-from-square projects-more-arrow"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="section-divider"></div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info fade-in">
+        <p class="contact-intro">
+          Have a project idea, collaboration, or just want to say hello? Feel free to reach out through any of the channels below.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/Bishaleyyy" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">GitHub</span>
+              <span class="cl-value">github.com/Bishaleyyy</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/bishal-sapkota-94b612358/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-value">linkedin.com/in/bishal-sapkota-94b612358</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/bishaleyyyy_/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">Instagram</span>
+              <span class="cl-value">@bishaleyyyy_</span>
+            </div>
+          </a>
+          <a href="https://www.tiktok.com/@bishaleyyyy_" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon"><i class="fa-brands fa-tiktok"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">TikTok</span>
+              <span class="cl-value">@bishaleyyyy_</span>
+            </div>
+          </a>
+          <a href="mailto:sapkotabishal447@gmail.com" class="contact-link">
+            <div class="cl-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">Email</span>
+              <span class="cl-value">sapkotabishal447@gmail.com</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" placeholder="What's it about?" />
+        </div>
+        <div class="form-field">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i> Message sent successfully!
+        </p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <p>Designed & built by Bishal Sapkota</strong></p>
+    <p class="footer-sub">&copy; 2026 Bishal Sapkota · BSc. CSIT Student · Nepal · All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
