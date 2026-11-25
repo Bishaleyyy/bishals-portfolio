@@ -5,10 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="LIVE_DEMO_URL">🌐 Live Demo</a>
+  <a href="https://sapkota-bishal.com.np">🌐 Live Demo</a>
 </p>
-
-> Note: Live demo will be available after deployment.
 
 ---
 
@@ -89,5 +87,3 @@ You can also open the folder in Visual Studio Code and use the Live Server exten
 - **GitHub:** [@Bishaleyyy](https://github.com/Bishaleyyy)
 
 ---
-
-<!-- deploy test -->
