@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="icon" type="image/png" href="bs-logo.png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="bs-logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,24 +19,7 @@
   <!-- ░░ NAVBAR ░░ -->
   <nav class="navbar" id="navbar">
     <a href="#home" class="nav-logo" aria-label="Bishal Sapkota — BS monogram, back to home">
-      <svg class="nav-logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bsLogoGrad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#B22234"/>
-            <stop offset="1" stop-color="#F0788C"/>
-          </linearGradient>
-          <linearGradient id="bsLogoText" x1="30" y1="20" x2="48" y2="46" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#D94F65"/>
-            <stop offset="1" stop-color="#F0788C"/>
-          </linearGradient>
-        </defs>
-        <rect x="4" y="4" width="56" height="56" rx="18" fill="rgba(178,34,52,.10)" stroke="url(#bsLogoGrad)" stroke-width="1.5"/>
-        <g font-family="'Outfit', sans-serif" font-weight="800" font-size="28">
-          <text x="14.1" y="42" fill="#F3EEF0">B</text>
-          <text x="32.3" y="42" fill="url(#bsLogoText)">S</text>
-        </g>
-        <circle cx="54" cy="10" r="3" fill="#D94F65"/>
-      </svg>
+      <img class="nav-logo-svg" src="bs-logo.png" alt="Bishal Sapkota logo" width="64" height="64" />
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#home"     class="nav-link active">Home</a></li>
@@ -300,77 +285,48 @@
     <h2 class="section-title">Contact <span>Me</span></h2>
     <div class="section-divider"></div>
 
-    <div class="contact-grid">
+    <div class="contact-wrap">
 
       <div class="contact-info fade-in">
         <p class="contact-intro">
           Have a project idea, collaboration, or just want to say hello? Feel free to reach out through any of the channels below.
         </p>
-        <div class="contact-links">
-          <a href="https://github.com/Bishaleyyy" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
-            <div class="cl-text">
-              <span class="cl-label">GitHub</span>
-              <span class="cl-value">github.com/Bishaleyyy</span>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/bishal-sapkota-94b612358/" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="cl-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-            <div class="cl-text">
-              <span class="cl-label">LinkedIn</span>
-              <span class="cl-value">linkedin.com/in/bishal-sapkota-94b612358</span>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/bishaleyyyy_/" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="cl-icon"><i class="fa-brands fa-instagram"></i></div>
-            <div class="cl-text">
-              <span class="cl-label">Instagram</span>
-              <span class="cl-value">@bishaleyyyy_</span>
-            </div>
-          </a>
-          <a href="https://www.tiktok.com/@bishaleyyyy_" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="cl-icon"><i class="fa-brands fa-tiktok"></i></div>
-            <div class="cl-text">
-              <span class="cl-label">TikTok</span>
-              <span class="cl-value">@bishaleyyyy_</span>
-            </div>
-          </a>
-          <a href="mailto:sapkotabishal447@gmail.com" class="contact-link">
-            <div class="cl-icon"><i class="fa-regular fa-envelope"></i></div>
-            <div class="cl-text">
-              <span class="cl-label">Email</span>
-              <span class="cl-value">sapkotabishal447@gmail.com</span>
-            </div>
-          </a>
+
+        <ul class="contact-details">
+          <li>
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:sapkotabishal447@gmail.com">sapkotabishal447@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <a href="https://wa.me/9779748428767" target="_blank" rel="noopener noreferrer">+977-9748428767</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Nepal</span>
+          </li>
+        </ul>
+
+        <div class="home-socials contact-socials">
+          <a href="https://github.com/Bishaleyyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bishal-sapkota-94b612358/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/bishaleyyyy_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@bishaleyyyy_" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
 
-      <form class="contact-form fade-in" id="contactForm">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" placeholder="Your name" required />
-          </div>
-          <div class="form-field">
-            <label for="femail">Email</label>
-            <input type="email" id="femail" placeholder="your@email.com" required />
-          </div>
+      <div class="contact-box fade-in">
+        <h3>Let's connect</h3>
+        <p>Choose whichever is easiest for you. I'd love to hear about your project, idea, or collaboration.</p>
+        <div class="contact-actions">
+          <a href="mailto:sapkotabishal447@gmail.com" class="btn btn-primary btn-full">
+            Send Me an Email <i class="fa-solid fa-paper-plane"></i>
+          </a>
+          <a href="https://wa.me/9779748428767" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full">
+            Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
-        <div class="form-field">
-          <label for="fsubject">Subject</label>
-          <input type="text" id="fsubject" placeholder="What's it about?" />
-        </div>
-        <div class="form-field">
-          <label for="fmessage">Message</label>
-          <textarea id="fmessage" rows="5" placeholder="Your message here..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">
-          Send Message <i class="fa-solid fa-paper-plane"></i>
-        </button>
-        <p class="form-success" id="formSuccess">
-          <i class="fa-solid fa-circle-check"></i> Message sent successfully!
-        </p>
-      </form>
+      </div>
 
     </div>
   </section>

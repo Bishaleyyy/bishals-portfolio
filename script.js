@@ -270,27 +270,6 @@ if (hasHover) {
 }
 
 
-/* ============ 10. CONTACT FORM ============
-   Handles the form submit with a simple
-   success message (no backend needed).
-=========================================== */
-const form    = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-
-form?.addEventListener('submit', (e) => {
-  e.preventDefault(); // stop page reload
-
-  // show success message
-  success.classList.add('show');
-  form.reset();
-
-  // hide message after 4 seconds
-  setTimeout(() => {
-    success.classList.remove('show');
-  }, 4000);
-});
-
-
 /* ============ 11. SMOOTH SCROLL FOR ANCHOR LINKS ============
    Makes clicking any #link scroll smoothly
    to that section instead of jumping.
